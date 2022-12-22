@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import People from "./assets/img/consult.svg";
+import Seta from "./assets/img/seta.svg"
+
+import {
+  Container,
+  H1,
+  Image,
+  ContainerItens,
+  Input,
+  InputLabel,
+  Button,
+} from "./style";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Image alt="logo-img" src={People} />
+      <ContainerItens>
+        <H1>Olá, seja bem-vindo!</H1>
+
+        <InputLabel>Name</InputLabel>
+        <Input placeholder="Hércules"></Input>
+
+        <InputLabel>Age</InputLabel>
+        <Input placeholder="25"></Input>
+
+        <Button>Cadastrar <img alt="seta" src={Seta} /> </Button>
+      </ContainerItens>
+    </Container>
   );
 }
 
