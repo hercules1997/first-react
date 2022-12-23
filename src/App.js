@@ -1,7 +1,7 @@
 import React from "react";
 
-import People from "./assets/img/consult.svg";
-import Seta from "./assets/img/seta.svg"
+import People from "./img/consult.svg";
+import Seta from "./img/seta.svg"
 
 import {
   Container,
