@@ -21,7 +21,7 @@ function Users() {
 
   useEffect(() => {
       async function fetchUser() {
-        const { data: allUser } = await axios.get("http://localhost:3019/users")
+        const { data: allUser } = await axios.get("https://node-user-598d.vercel.app/users")
 
         setUsers(allUser)
       }
@@ -32,7 +32,7 @@ function Users() {
 
   async function removeUser(userId) {
     
-    await axios.delete(`http://localhost:3019/users/${userId}`)
+    await axios.delete(`https://node-user-598d.vercel.app/users/${userId}`)
 
     const newUsers = users.filter((user) => user.id !== userId);
 
